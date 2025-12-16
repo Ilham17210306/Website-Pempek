@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pempek Amanda | Pempek Asli Palembang</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { margin: 0; background: #0f172a; color: #e5e7eb; }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #020617, #1e293b);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 4px;
+      color: #facc15;
+      animation: glow 2s infinite alternate;
+    }
+
+    header p { max-width: 600px; margin: auto; opacity: 0.9; }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #facc15; }
+      to { text-shadow: 0 0 20px #facc15; }
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #020617;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 12px;
+      z-index: 10;
+    }
+
+    nav a { color: #e5e7eb; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: #facc15; }
+
+    section { padding: 60px 20px; }
+
+    .produk {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: #020617;
+      border-radius: 20px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(250,204,21,0.15);
+    }
+
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+    .card h3 { margin: 15px 0 5px; }
+    .card p { color: #facc15; font-size: 1.1rem; }
+
+    .btn {
+      display: inline-block;
+      margin: 15px 0 25px;
+      padding: 10px 25px;
+      background: #facc15;
+      color: #020617;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn:hover { background: #fde047; }
+
+    .about, .testimoni {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .testimoni-box {
+      background: #020617;
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 20px;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      opacity: 0.8;
+    }
+
+    .wa {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #22c55e;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#produk">Produk</a>
+  <a href="#about">Tentang</a>
+  <a href="#testimoni">Testimoni</a>
+</nav>
+
+<header>
+  <h1>PEMPEK AMANDA</h1>
+  <p id="typing"></p>
+</header>
+
+
+<section id="produk" class="produk">
+  <div class="card">
+    <img src="download.jpeg" alt="Pempek Kapal Selam">
+    <h3>Pempek Kapal Selam</h3>
+    <p>Rp 15.000</p>
+    <a class="btn" href="https://wa.me/6285710236985?text=Pesan%20Pempek%20Kapal%20Selam">Pesan</a>
+  </div>
+
+  <div class="card">
+    <img src="lenjer2.jpeg" alt="Pempek Lenjer">
+    <h3>Pempek Lenjer</h3>
+    <p>Rp 10.000</p>
+    <a class="btn" href="https://wa.me/6285710236985?text=Pesan%20Pempek%20Lenjer">Pesan</a>
+  </div>
+
+  <div class="card">
+    <img src="adaan.jpeg" alt="Pempek Adaan">
+    <h3>Pempek Adaan</h3>
+    <p>Rp 8.000</p>
+    <a class="btn" href="https://wa.me/6285710236985?text=Pesan%20Pempek%20Adaan">Pesan</a>
+  </div>
+
+  <div class="card">
+    <img src="lenggang.jpeg" alt="Pempek Adaan">
+    <h3>Pempek Lenggang</h3>
+    <p>Rp 8.000</p>
+    <a class="btn" href="https://wa.me/6285710236985?text=Pesan%20Pempek%20Adaan">Pesan</a>
+  </div>
+
+  <div class="card">
+    <img src="kulit.jpg" alt="Pempek Adaan">
+    <h3>Pempek Kulit</h3>
+    <p>Rp 8.000</p>
+    <a class="btn" href="https://wa.me/6285710236985?text=Pesan%20Pempek%20Adaan">Pesan</a>
+  </div>
+
+  <div class="card">
+    <img src="tekwan.jpeg" alt="Pempek Adaan">
+    <h3>Tekwan</h3>
+    <p>Rp 13.000</p>
+    <a class="btn" href="https://wa.me/6285710236985?text=Pesan%20Pempek%20Adaan">Pesan</a>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>Tentang Kami</h2>
+  <p>Pempek Amanda dibuat dengan resep turun-temurun khas Palembang. Kami menjaga rasa autentik, kualitas ikan terbaik, dan kebersihan produksi.</p>
+</section>
+
+<section id="testimoni" class="testimoni">
+  <h2>Apa Kata Pelanggan?</h2>
+  <div class="testimoni-box">“Pempeknya enak banget, cuko mantap dan nagih!”</div>
+  <div class="testimoni-box">“Kenyal, gurih, dan pengiriman cepat 👍”</div>
+</section>
+
+<section class="testimoni">
+  <h2>Apa Kata Pelanggan?</h2>
+  <div class="testimoni-box">
+    <p id="testimoni-text"></p>
+  </div>
+</section>
+
+
+<footer>
+  <p>© 2025 Pempek Amanda • Asli Palembang</p>
+</footer>
+
+<a class="wa" href="https://wa.me/6285710236985">💬 Order via WhatsApp</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
